@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import './style/App.css';
 
 import NavigationBar from './components/navigation_bar';
+import CreateProfileForm from './components/create_profile_form';
+// import FoodResults from './components/food_results';
+
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -21,8 +24,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar />
-
-
+        <div className="container">
+          <CreateProfileForm />
+        </div>
       </div>
     );
   }

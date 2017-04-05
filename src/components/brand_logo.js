@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import { Header } from 'react-bootstrap';
-import { Brand } from 'react-bootstrap';
+// import { Header } from 'react-bootstrap';
+// import { Brand } from 'react-bootstrap';
 
 const BrandLogo = () => {
   return (
