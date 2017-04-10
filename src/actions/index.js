@@ -19,6 +19,14 @@ export const setQuery = (text) => {
   }
 }
 
+export const selectRecipe = (recipe) => {
+  console.log('the recipe, ' recipe ', has been selected')
+  return {
+    type: 'RECIPE_SELCTED',
+    payload: recipe
+  }
+}
+
 // export const doSearch = (query) => {
 //   return {
 //     type: 'DO_SEARCH',

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import SearchBar from '../containers/search_bar';
-// import BrowseFilter from './browse_filter';
-// import BrandLogo from './brand_logo';
+import SearchBar from '../../containers/search-bar/search_bar'; 
 import CreateProfileButton from './create_profile_button';
 
 const NavigationBar = ({ profile, onCreateProfile }) => {

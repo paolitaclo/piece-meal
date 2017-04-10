@@ -30,11 +30,6 @@ class SearchBar extends Component {
         </Navbar.Form>
       )
     }
-
-    // onInputChange(term) {
-    //   this.setState({term});
-    //   this.props.onSearchTermChange(term)
-    // }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
