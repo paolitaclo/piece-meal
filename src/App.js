@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './style/App.css';
 
-import NavigationBar from './components/navigation_bar';
+import NavigationBar from './components/navigation-bar/navigation_bar';
 import CreateProfileForm from './components/create_profile_form';
-import RecipeList from './components/recipe-list/recipe_list';
+import RecipeList from './containers/recipe-list/recipe_list';
 import RecipeDetail from './containers/recipe-detail/recipe_detail';
 
 
@@ -16,14 +16,15 @@ class App extends Component {
       onHide: false
     };
   }
+
   onClickRecipe=(recipe, recipeIndex) => {
     this.setState({indexSelected: recipeIndex});
-  }
+  };
 
   onCreateProfile=()=> {
     this.setState({
       profile: 'Paola'
-    })
+    });
   }
   // API Call for ingredientSearch
   // ingredientSearch(term) {
@@ -38,7 +39,8 @@ class App extends Component {
           <CreateProfileForm />
         </div>
         <div>
-          <RecipeList recipes={this.state.recipes} onClickRecipe={this.onClickRecipe}/>
+          <RecipeList />
+          <RecipeDetail />
         </div>
       </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import SearchBar from '../../containers/search-bar/search_bar'; 
+import SearchBar from '../../containers/search-bar/search_bar';
 import CreateProfileButton from './create_profile_button';
 
-const NavigationBar = ({ profile, onCreateProfile }) => {
+const NavigationBar = ({ profile }) => {
   return (
     <Navbar>
       <Navbar.Header>
@@ -12,7 +12,9 @@ const NavigationBar = ({ profile, onCreateProfile }) => {
         </Navbar.Brand>
       </Navbar.Header>
       <SearchBar />
-      <CreateProfileButton profile={profile} onCreateProfile={onCreateProfile} />
+      <Navbar.Text pullRight>
+          <a onClick={()=> onCreateProfile()} href="#">{profile}</a>
+      </Navbar.Text>
     </Navbar>
   )
 }

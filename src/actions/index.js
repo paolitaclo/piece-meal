@@ -20,9 +20,9 @@ export const setQuery = (text) => {
 }
 
 export const selectRecipe = (recipe) => {
-  console.log('the recipe, ' recipe ', has been selected')
+  console.log('selectRecipe action triggered')
   return {
-    type: 'RECIPE_SELCTED',
+    type: 'RECIPE_SELECTED',
     payload: recipe
   }
 }

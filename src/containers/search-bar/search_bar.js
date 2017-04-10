@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setQuery, doSearch } from '../actions/index'
+import { setQuery, doSearch } from '../../actions/index'
 import { bindActionCreators } from 'redux';
 import { Navbar, FormGroup, FormControl, Button } from 'react-bootstrap';
 
