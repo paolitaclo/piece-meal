@@ -7,7 +7,7 @@ const CreateProfileButton = ({ profile, onCreateProfile }) => {
     <Navbar.Text pullRight>
         <a onClick={()=> onCreateProfile()} href="#">{profile}</a>
     </Navbar.Text>
-  )
+  ) ``
 };
 
 export default CreateProfileButton;

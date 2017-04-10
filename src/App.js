@@ -43,7 +43,8 @@ class App extends Component {
       ],
       recipeSelected: {},
       indexSelected: null,
-      onHide: false
+      onHide: false,
+      show: false
     };
   }
   onClickRecipe=(recipe, recipeIndex) => {
@@ -54,6 +55,9 @@ class App extends Component {
     this.setState({
       profile: 'Paola'
     })
+  }
+  onCloseModal=()=> {
+    this.setState({ show: false });
   }
   // API Call for ingredientSearch
   // ingredientSearch(term) {
