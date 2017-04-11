@@ -7,6 +7,11 @@ const config = {
   headers: { token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTQ5MTg3NjQyNCwiZXhwIjoxNDkyNDgxMjI0fQ.nalShWjhqMDQN0om6DArjPeVkU5R4-t0RuQ7HeEqR9E'}
 };
 
+function getRecipes(value) {
+  return axios.get(`http://piecemeal-api.herokuapp.com/api/v1/search/recipes?text=${value}`, config)
+  .then(response => response.data.recipes);
+}
+
 export const setQuery = (text) => {
   // console.log('this is action creating setQuery to', text);
   return {
@@ -40,9 +45,6 @@ export const doSearch = (value) => {
   }
 }
 
-function getRecipes(value) {
-  return axios.get(`http://piecemeal-api.herokuapp.com/api/v1/search/recipes?text=${value}`, config);
-}
 
 console.log(getRecipes('a'));
 
