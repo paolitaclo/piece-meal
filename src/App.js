@@ -54,6 +54,7 @@ class App extends Component {
         <div>
           <Route exact path='/' component={NavigationBar} />
           <Route exact path='/' component={RecipeList} />
+          <Route exact path='/' component={RecipeDetail} />
           <Route exact path='/create_profile' component={NavigationBar} />
           <Route exact path='/create_profile' component={NavigationBar, CreateProfileForm} />
 
