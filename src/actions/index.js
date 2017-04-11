@@ -1,5 +1,4 @@
 
-
 export const setQuery = (text) => {
   // console.log('this is action creating setQuery to', text);
   return {

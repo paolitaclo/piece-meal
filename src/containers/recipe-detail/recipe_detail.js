@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+import './recipe_detail.css'
 
 class RecipeDetail extends Component {
+
   render() {
-    if (!this.props.recipe) {
-    return (<div>No recipes</div>);
-  }
+    if (! this.props.recipe) {
+      return (<div>No Recipe</div>)
+    }
+    const { name, imageUrl, ingredients, instructions } = this.props.recipe;
     return (
-      <div>
-        <h3>Details for:</h3>
-        <div>Recipe Title: {this.props.recipe.name}</div>
-        <div>Image: <img src={this.props.recipe.imageUrl} alt="recipe image"/></div>
-        <div>Ingredients: {this.props.recipe.ingredients}</div>
-        <div>instructions: {this.props.recipe.instructions}</div>
+      <div className="row m-t-4">
+        <div className="col-md-12">
+          <img className="img-responsive center-block" src={this.recipeRetrieval} alt="recipe"/>
+          <h2>{name}</h2>
+          <div>Ingredients: {ingredients}</div>
+          <div>instructions: {instructions}</div>
+        </div>
       </div>
     );
   }

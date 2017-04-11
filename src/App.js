@@ -4,6 +4,7 @@ import './style/App.css';
 import NavigationBar from './containers/navigation-bar/navigation_bar';
 import CreateProfileForm from './containers/create-profile-form/create_profile_form';
 import RecipeList from './containers/recipe-list/recipe_list';
+import Recipe from './containers/recipe-list/recipe';
 import RecipeDetail from './containers/recipe-detail/recipe_detail';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -53,8 +54,12 @@ class App extends Component {
         <div>
           <Route exact path='/' component={NavigationBar} />
           <Route exact path='/' component={RecipeList} />
+          <Route exact path='/' component={Recipe} />
           <Route exact path='/create_profile' component={NavigationBar} />
-          <Route exact path='/create_profile' component={NavigationBar, CreateProfileForm} />
+          <Route exact path='/create_profile' component={CreateProfileForm} />
+          <Route exact path='/recipe/:id' component={NavigationBar} />
+          <Route exact path='/recipe/:id' component={RecipeDetail} />
+
 
         </div>
       </Router>

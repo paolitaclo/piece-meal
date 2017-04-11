@@ -1,0 +1,32 @@
+.list-item li {
+  display: inline;
+}
+
+.p-y-15 {
+	padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.recipe-img {
+  border-radius: 15px;
+}
+
+.peiceMeal h1 {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  color: #666;
+}
+
+.recipe-div {
+  border-style: none;
+  border-radius: 15px;
+}
+
+.recipe-div:hover {
+  background: #f2f2f2;
+}
+
+.recipe-div :hover {
+  text-decoration: none;
+}
