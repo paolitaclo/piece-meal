@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './style/App.css';
 
 import NavigationBar from './containers/navigation-bar/navigation_bar';
-import CreateProfileForm from './containers/create-profile-form/create_profile_form';
+import CreateForm from './containers/create-profile-form/create_profile_form';
 import RecipeList from './containers/recipe-list/recipe_list';
 import Recipe from './containers/recipe-list/recipe';
 import RecipeDetail from './containers/recipe-detail/recipe_detail';
@@ -12,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: 'Create Profile',//this will change to userName 'Paola'
+      profile: 'Create Profile',
       indexSelected: null,
       onHide: false
     };
@@ -57,7 +57,7 @@ class App extends Component {
           <Route exact path='/' component={RecipeList} />
           <Route exact path='/' component={Recipe} />
           <Route exact path='/create_profile' component={NavigationBar} />
-          <Route exact path='/create_profile' component={CreateProfileForm} />
+          <Route exact path='/create_profile' component={CreateForm} />
           <Route exact path='/recipe/:id' component={NavigationBar} />
           <Route exact path='/recipe/:id' component={RecipeDetail} />
 

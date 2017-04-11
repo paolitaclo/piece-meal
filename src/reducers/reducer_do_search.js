@@ -1,4 +1,6 @@
-const doSearchReducer = (state={results:{recipes:[]}}, action) => {
+import RecipeList from './reducer_recipe_list.js';
+
+const doSearchReducer = (state={results:{recipes: RecipeList()}}, action) => {
   console.log(action);
   switch (action.type) {
     case 'DO_SEARCH_PENDING':

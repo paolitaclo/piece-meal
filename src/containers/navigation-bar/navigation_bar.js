@@ -16,7 +16,6 @@ const NavigationBar = ({ profile, onClick }) => {
       <SearchBar />
       <Navbar.Text pullRight>
           <Link to='/create_profile' onClick={onClick} href="#">{profile}</Link>
-          {/* <a onClick={()=> onCreateProfile()} href="#">{profile}</a> */}
       </Navbar.Text>
     </Navbar>
   )
