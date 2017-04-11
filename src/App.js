@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './style/App.css';
 
-import NavigationBar from './components/navigation-bar/navigation_bar';
-import CreateProfileForm from './components/create_profile_form';
+import NavigationBar from './containers/navigation-bar/navigation_bar';
+import CreateProfileForm from './containers/create-profile-form/create_profile_form';
 import RecipeList from './containers/recipe-list/recipe_list';
 import RecipeDetail from './containers/recipe-detail/recipe_detail';
 
@@ -34,7 +34,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavigationBar profile={this.state.profile} onCreateProfile={this.onCreateProfile}/>
+        <NavigationBar />
+        {/* <NavigationBar profile={this.state.profile} onCreateProfile={this.onCreateProfile}/> */}
         <div className="container">
           <CreateProfileForm />
         </div>

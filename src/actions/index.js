@@ -26,6 +26,15 @@ export const selectRecipe = (recipe) => {
     payload: recipe
   }
 }
+//for later need to update the profileName to call
+//and show the form for log in
+export const showProfile = () => {
+  console.log('triggering showProfile');
+  return {
+    type: 'SHOW_PROFILE_NAME',
+    profileName: 'Paola'
+  }
+}
 
 // export const doSearch = (query) => {
 //   return {
