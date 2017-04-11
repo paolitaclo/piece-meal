@@ -5,7 +5,7 @@ import NavigationBar from './containers/navigation-bar/navigation_bar';
 import CreateProfileForm from './containers/create-profile-form/create_profile_form';
 import RecipeList from './containers/recipe-list/recipe_list';
 import RecipeDetail from './containers/recipe-detail/recipe_detail';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -31,19 +31,47 @@ class App extends Component {
   //
   // }
 
+
+  // const homePage = ({path, text}) => {
+  //   return (
+  //     <li><Link to='/{path}'>{text}</Link></li>
+  //   )
+  // }
+  //
+  // const mapStateToProps = (state) => {
+  //   return {
+  //     path: state.path
+  //   }
+  // }
+
+  // const statefulHomePage = connect(mapStateToProps)(homePage) ;
+
   render() {
+
     return (
-      <div className="App">
-        <NavigationBar />
-        {/* <NavigationBar profile={this.state.profile} onCreateProfile={this.onCreateProfile}/> */}
-        <div className="container">
-          <CreateProfileForm />
-        </div>
+
+      <Router>
         <div>
-          <RecipeList />
-          <RecipeDetail />
+          <Route exact path='/' component={NavigationBar} />
+          <Route exact path='/' component={RecipeList} />
+          <Route exact path='/create_profile' component={NavigationBar} />
+          <Route exact path='/create_profile' component={NavigationBar, CreateProfileForm} />
+
         </div>
-      </div>
+      </Router>
+
+      // <Router>
+      //   <div className="App">
+      //     <NavigationBar profile={this.state.profile} onCreateProfile={this.onCreateProfile}/>
+      //     <div className="container">
+      //       <CreateProfileForm />
+      //     </div>
+      //     <div className="container">
+      //       <RecipeList />
+      //       <RecipeDetail />
+      //     </div>
+      //   </div>
+      // </Router>
     );
   }
 }

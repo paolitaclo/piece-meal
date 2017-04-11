@@ -18,11 +18,14 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App/>
   </Provider>,
   document.getElementById('root')
 );
 
 if (module.hot) {
-  module.hot.accept()
+  module.hot.accept('./reducers', () => {
+    const nextRootReducer = require('./reducers/index');
+    store.replaceReducer(nextRootReducer);
+  })
 }
