@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectRecipe } from '../../actions/index';
 import { bindActionCreators } from 'redux';
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
-
+import { selectRecipe } from '../../actions/index'
+import Recipe from './recipe';
+import './recipe_list.css'
 
 class RecipeList extends Component {
-  // renderlist () {
-  //   return
-  //     );
-  //   });
-  // }
 
   render() {
+    const { recipes } = this.props;
     return (
-      <ListGroup>
-        {this.props.recipes.map((recipe) => {
-          return (
-            <ListGroupItem
-              key={recipe.id}
-              onClick={()=> this.props.selectRecipe(recipe)}>
-              {recipe.name}
-            </ListGroupItem>
-          )
-        })
-        }
-      </ListGroup>
+      <div className="container">
+        <div className="row">
+          {recipes.map( (recipe) => {
+            return (
+              <Recipe
+                key={recipe.id}
+                onClick={()=> this.props.selectRecipe(recipe)}
+                {...recipe}
+              />)}
+            ) }
+          </div>
+      </div>
     )
   }
 };
@@ -37,7 +33,8 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectRecipe: selectRecipe }, dispatch)
+  return bindActionCreators({ selectRecipe: selectRecipe}, dispatch)
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(RecipeList);
