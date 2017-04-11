@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { showProfile } from '../../actions/index';
 
-
 const NavigationBar = ({ profile, onClick }) => {
   return (
     <Navbar>
