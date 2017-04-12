@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { selectRecipe } from '../../actions/index'
 import Recipe from './recipe';
+import StackGrid from "react-stack-grid";
+
 import './recipe_list.css'
 
 export class RecipeList extends Component {
@@ -10,18 +10,32 @@ export class RecipeList extends Component {
   render() {
     const { recipes } = this.props;
     return (
-      <div className="container">
+      <div className="content">
+        <StackGrid
+          columnWidth={300}
+          gutterWidth={5}
+          gutterHeight={5}
+          >
+            {recipes.map( (recipe) => {
+              return (
+                <Recipe
+                  key={recipe.id}
+                  {...recipe}
+                />)}
+              ) }
+        </StackGrid>
+      </div>
+      /* <div className="container">
         <div className="row">
           {recipes.map( (recipe) => {
             return (
               <Recipe
                 key={recipe.id}
-                onClick={()=> this.props.selectRecipe(recipe)}
                 {...recipe}
               />)}
             ) }
           </div>
-      </div>
+      </div> */
     )
   }
 };
@@ -33,9 +47,6 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectRecipe: selectRecipe }, dispatch)
-}
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(RecipeList);
+export default connect(mapStateToProps)(RecipeList);

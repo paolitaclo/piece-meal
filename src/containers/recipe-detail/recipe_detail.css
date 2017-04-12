@@ -1,3 +1,47 @@
 .m-t-4 {
 	margin-top: 4em;
 }
+
+.detail h1 {
+	padding-bottom: 1em;
+}
+
+.detail img {
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.detail .title {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.detail p {
+	color: rgb(171, 171, 171);
+}
+
+.information {
+	padding-bottom: 50px;
+}
+
+.info-sub {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.info-sub h2 {
+	padding-bottom: 5px;
+}
+
+.info-sub h3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.info-sub li {
+	color: rgb(43, 43, 43);
+	font-size: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}

@@ -23,14 +23,6 @@ export const setQuery = (text) => {
   }
 }
 
-export const selectRecipe = (recipe) => {
-  console.log('selectRecipe action triggered')
-  return {
-    type: 'RECIPE_SELECTED',
-    payload: recipe
-  }
-}
-
 export const showProfile = () => {
   console.log('triggering showProfile');
   return {
