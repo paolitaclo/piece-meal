@@ -27,13 +27,15 @@ class RecipeList extends Component {
 };
 
 function mapStateToProps(state) {
+  console.log('state from recipeList', state);
   return {
-    recipes: state.recipes
+    recipes: state.search.results.recipes
   };
 }
 //
 // function mapDispatchToProps(dispatch) {
 //   return bindActionCreators({ selectRecipe }, dispatch)
 // }
+
 
 export default connect(mapStateToProps)(RecipeList);

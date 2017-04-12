@@ -1,61 +1,45 @@
-import React from 'react';
-import {
-  FormGroup,
-  ControlLabel,
-  FormControl,
-  HelpBlock,
-  Button,
-  Grid,
-  Row,
-  Col } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { reduxForm, Field } from 'redux-form';
+import { bindActionCreators } from 'redux';
+import { createProfileForm } from '../../actions/index';
 
-function FieldGroup({ id, label, help, ...props }) {
-  return (
-    <FormGroup controlId={id}>
-      <ControlLabel>{label}</ControlLabel>
-      <FormControl {...props} />
-      {help && <HelpBlock>{help}</HelpBlock>}
-    </FormGroup>
-  );
+const mapStateToProps = (state) => {
+  return {
+    newUser: false
+  }
 }
-const CreateProfileForm = () => {
-  return (
-    <Grid>
-      <Row>
-        <Col xs={12} md={6} mdOffset={3}>
-          <form>
-            <FieldGroup
-              id="formControlsText"
-              type="text"
-              label="First Name"
-              placeholder="Enter First Name"
-            />
-            <FieldGroup
-              id="formControlsText"
-              type="text"
-              label="Last Name"
-              placeholder="Enter Last Name"
-            />
-            <FieldGroup
-              id="formControlsEmail"
-              type="email"
-              label="Email address"
-              placeholder="Enter email"
-            />
-            <FieldGroup
-              id="formControlsPassword"
-              label="Password"
-              type="password"
-            />
-            <Button type="submit">
-            Submit
-            </Button>
-          </form>
-        </Col>
-      </Row>
-    </Grid>
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return bindActionCreators({ createProfileForm }, dispatch);
+}
 
-  );
-};
+class createForm extends Component {
+  render() {
+    const { handleSubmit } = this.props;
+    return (
+      <form onSubmit={handleSubmit(this.props.createProfileForm)}>
+        <div>
+          <label htmlFor="first_name">First Name</label>
+        <Field name="first_name" component="input" type="text" />
+        </div>
+        <div>
+          <label htmlFor="last_name">Last Name</label>
+        <Field name="last_name" component="input" type="text" />
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+        <Field name="email" component="input" type="email" />
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+        <Field name="password" component="input" type="text" />
+        </div>
+        <button type="submit" >Submit</button>
+      </form>
+    )
+  }
+}
 
-export default CreateProfileForm;
+export default connect(mapStateToProps, mapDispatchToProps)(reduxForm({
+  form: 'Register'
+})(createForm));
