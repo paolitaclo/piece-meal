@@ -11,7 +11,6 @@ function getRecipes(value) {
 function postProfile(props) {
   return axios.post('https://piecemeal-api.herokuapp.com/api/v1/clients', props)
   .then((response) => {
-    console.log('user info: ', response.data);
     return response.data;
   });
 }
@@ -24,7 +23,6 @@ export const setQuery = (text) => {
 }
 
 export const showProfile = () => {
-  console.log('triggering showProfile');
   return {
     type: 'SHOW_PROFILE_NAME',
     profileName: 'Paola'
@@ -32,7 +30,6 @@ export const showProfile = () => {
 }
 
 export const doSearch = (value) => {
-  console.log('this is what we want to search: ', value);
   return {
     type: 'DO_SEARCH',
     payload: getRecipes(value)
@@ -40,7 +37,6 @@ export const doSearch = (value) => {
 }
 
 export const createProfileForm = (props) => {
-  console.log('info for profile: ', props);
   return {
     type: 'CREATE_PROFILE',
     payload: postProfile(props)
