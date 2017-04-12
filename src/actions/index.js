@@ -5,11 +5,11 @@ const config = {
 };
 
 function getRecipes(value) {
-  return axios.get(`http://piecemeal-api.herokuapp.com/api/v1/search/recipes?text=${value}`, config)
+  return axios.get(`https://piecemeal-api.herokuapp.com/api/v1/search/recipes?text=${value}`, config)
   .then(response => response.data.recipes);
 }
 function postProfile(props) {
-  return axios.post('http://piecemeal-api.herokuapp.com/api/v1/clients', props)
+  return axios.post('https://piecemeal-api.herokuapp.com/api/v1/clients', props)
   .then((response) => {
     console.log('user info: ', response.data);
     return response.data;
