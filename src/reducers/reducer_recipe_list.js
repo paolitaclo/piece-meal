@@ -5,7 +5,7 @@ export default function() {
       name: 'Fried Chicken Sandwich with Jalapeno Broccoli Slaw and Spicy Mayo',
       recipeAuthor: 'New South Food Co',
       servingsNumber: '4',
-      recipeUrl: 'https://newsouthfoodcompany.com/fried-chicken-sandwich-with-jalapeno-broccoli-slaw-and-spicy-mayo/',
+      recipeUrl: 'http://newsouthfoodcompany.com/fried-chicken-sandwich-with-jalapeno-broccoli-slaw-and-spicy-mayo/',
       ingredients: ['chicken', 'bread', 'flour', 'eggs', 'broccoli slaw', 'jalapeño', 'red onion', 'mayonnaise', 'pickles', 'buttermilk'],
       instructions:
       [
@@ -20,7 +20,7 @@ export default function() {
           steps: ['Combine flour, pepper, and 1/2 teaspoons salt in a gallon size ziploc bag.', 'Pour buttermilk into bowl.', 'Clean any remaining fat from chicken.', 'Slice the breasts horizontally so that you get 2 pieces from 1 whole chicken breast.', 'Working with 1 piece at a time, dredge chicken in flour mixture, shaking off excess. With your clean hand then dip in buttermilk, allowing excess to drip back into bowl. With your dry hand dredge again in flour mixture, shaking off excess.', 'Do this to all chicken pieces and set aside on a plate while you prepare the oil.', 'Pour oil or shortening into a large heavy skillet to a depth of 1/2-inch.', 'Heat over medium heat until thermometer registers 350°.', 'Fry chicken until golden brown and cooked through, about 5 minutes per side. Transfer to a wire rack set inside a baking sheet; season with kosher salt.', 'You can keep the fried chicken pieces in the oven at 170 degrees f while you fry the remaining pieces', 'Spread cut sides of buns with butter. Heat another large skillet over medium heat. Working in batches, cook buns buttered side down until browned and crisp, about 1 minute.', 'Spread with spicy mayo. Build sandwiches with buns, mayo, chicken, slaw and pickles.']
         }
       ],
-      imageUrl: 'https://newsouthfoodcompany.com/wp-content/uploads/2013/05/Fried-Chicken-with-Jalapeno-Cole-Slaw-and-Spicy-Mayo.jpg'
+      imageUrl: 'http://newsouthfoodcompany.com/wp-content/uploads/2013/05/Fried-Chicken-with-Jalapeno-Cole-Slaw-and-Spicy-Mayo.jpg'
     },
     {
       id:2,
@@ -49,7 +49,7 @@ export default function() {
     {
       id:3,
       recipeAuthor: 'All Day I Dream About Food',
-      recipeUrl: 'https://alldayidreamaboutfood.com/2010/12/feta-stuffed-turkey-meatloaf-with-tzatziki-sauce-low-carb.html',
+      recipeUrl: 'http://alldayidreamaboutfood.com/2010/12/feta-stuffed-turkey-meatloaf-with-tzatziki-sauce-low-carb.html',
       servingsNumber: '6',
       name: 'Feta Stuffed Turkey Meatloof with Tzatziki Sauce',
       ingredients: ['yogurt', 'lemon juice', 'garlic', 'cucumber', 'dill', 'salt', 'onion', 'olive oil', 'pepper', 'spinach', 'ground turkey', 'almond meal', 'chicken stock', 'eggs', 'worcestershire sauce', 'feta cheese'],
@@ -127,7 +127,7 @@ export default function() {
       name: 'Ahi Tuna Poke Quinoa Bowl',
       servingsNumber: '2-4',
       recipeAuthor: 'i am a food blog',
-      recipeUrl: 'https://iamafoodblog.com/ahi-tuna-poke-quinoa-bowl/',
+      recipeUrl: 'http://iamafoodblog.com/ahi-tuna-poke-quinoa-bowl/',
       ingredients: ['2 tablespoons soy sauce',
         '1/2 tablespoon sweet soy sauce', '1 teaspoon toasted sesame oil', '1/2 teaspoon finely grated fresh ginger', '/2 teaspoon finely grated garlic', '1 lb. fresh ahi (sashimi grade) tuna, cut into bite-size cubes', '1/4 cup sliced green onions', '1/4 cup finely diced onion', 'smoked sea salt, to taste', 'toasted sesame seeds, to taste', '1 avocado, peeled, pitted, and sliced', 'short grain white rice, or quinoa, to serve', 'edamame, if desired', 'sprouts, if desired', 'crispy shallots, if desired'],
       instructions: [
@@ -138,7 +138,7 @@ export default function() {
           `When ready to serve, taste the poke and adjust the seasoning as needed with extra soy sauce, sesame oil, and smoked sea salt. Scoop out an appropriate amount of rice or quinoa into bowls. Add a generous amount of poke to the bowls and sprinkle on sesame seeds. Finish the bowls with avocado slices, edamame, sprouts, and crispy shallots. Enjoy!`]
         }
       ],
-      imageUrl: 'https://iamafoodblog.com/wp-content/uploads/2016/01/poke-5.jpg'
+      imageUrl: 'http://iamafoodblog.com/wp-content/uploads/2016/01/poke-5.jpg'
     }
     ,
     {
@@ -146,7 +146,7 @@ export default function() {
       name: 'Bangkok Curry Noodle Bowls with Crisp Baked Tofu',
       servingsNumber: '2-4',
       recipeAuthor: 'Forbidden Rice Blog',
-      recipeUrl: 'https://forbiddenriceblog.com/tag/curry-noodles/',
+      recipeUrl: 'http://forbiddenriceblog.com/tag/curry-noodles/',
       ingredients: [
         '15.5 ounces extra firm tofu',
         '1 tablespoon toasted sesame oil',
@@ -193,13 +193,13 @@ export default function() {
           steps: [`serve bowls topped with the purple cabbage and sesame seeds, along with a squeeze of lime and chopped basil leaves. Enjoy!`]
         }
       ],
-      imageUrl: `https://forbiddenriceblog.com/wp-content/uploads/2016/01/Forbidden-Rice-Blog-Bangkok-Curry-Noodles-with-Crisp-Tofu-11-of-11.jpg`
+      imageUrl: `http://forbiddenriceblog.com/wp-content/uploads/2016/01/Forbidden-Rice-Blog-Bangkok-Curry-Noodles-with-Crisp-Tofu-11-of-11.jpg`
     },
     {
       id: 8,
       name: 'Wheat Berry Shickpea Salad with Spinach, Apples and Feta/',
       recipeAuthor: 'Dinner with Julie',
-      recipeUrl: 'https://www.dinnerwithjulie.com/2017/02/10/blog-flog-wheat-berry-chickpea-salad-with-spinach-apples-and-feta/',
+      recipeUrl: 'http://www.dinnerwithjulie.com/2017/02/10/blog-flog-wheat-berry-chickpea-salad-with-spinach-apples-and-feta/',
       servingsNumber: ' 4-6',
       ingredients: [
         '1/2 cup wheat berries',
@@ -220,7 +220,7 @@ export default function() {
           'Put the wheat berries into a bowl with the spinach, chickpeas, celery, apple, parsley and feta. In a small bowl or jar, whisk or shake together the vinegar, oil, mustard and honey. Drizzle over the salad and toss to coat. Season with salt and pepper and sprinkle with almonds just before serving.']
         }
       ],
-      imageUrl: `https://www.dinnerwithjulie.com/wp-content/uploads/2017/01/Wheat-Berry-Chickpea-Salad-1.jpg`
+      imageUrl: `http://www.dinnerwithjulie.com/wp-content/uploads/2017/01/Wheat-Berry-Chickpea-Salad-1.jpg`
     }
 
   ]
