@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { selectRecipe } from '../../actions/index'
 import Recipe from './recipe';
+// import { bindActionCreators } from 'redux';
+// import { selectRecipe } from '../../actions/index';
 import './recipe_list.css'
 
 class RecipeList extends Component {
@@ -16,7 +16,7 @@ class RecipeList extends Component {
             return (
               <Recipe
                 key={recipe.id}
-                onClick={()=> this.props.selectRecipe(recipe)}
+                // onClick={() => selectRecipe(recipe)}
                 {...recipe}
               />)}
             ) }
@@ -31,10 +31,9 @@ function mapStateToProps(state) {
     recipes: state.recipes
   };
 }
+//
+// function mapDispatchToProps(dispatch) {
+//   return bindActionCreators({ selectRecipe }, dispatch)
+// }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectRecipe: selectRecipe}, dispatch)
-}
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(RecipeList);
+export default connect(mapStateToProps)(RecipeList);

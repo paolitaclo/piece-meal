@@ -21,6 +21,8 @@
 .recipe-div {
   border-style: none;
   border-radius: 15px;
+  display: block;
+
 }
 
 .recipe-div:hover {

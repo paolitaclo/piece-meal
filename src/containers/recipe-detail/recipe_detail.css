@@ -1,3 +1,18 @@
 .m-t-4 {
 	margin-top: 4em;
 }
+
+.detail h1 {
+	padding-bottom: 1em;
+}
+
+.detail img {
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.detail .title {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}

@@ -16,7 +16,7 @@ export const setQuery = (text) => {
 }
 
 export const selectRecipe = (recipe) => {
-  console.log('selectRecipe action triggered')
+  console.log('selectRecipe action triggered');
   return {
     type: 'RECIPE_SELECTED',
     payload: recipe
@@ -43,7 +43,7 @@ export const doSearch = (value) => {
 function getRecipes(value) {
   return axios.get(`http://piecemeal-api.herokuapp.com/api/v1/search/recipes?text=${value}`, config);
 }
-
-console.log(getRecipes('a'));
-
 //
+// console.log(getRecipes('a'));
+//
+// //

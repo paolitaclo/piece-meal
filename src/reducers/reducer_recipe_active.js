@@ -4,7 +4,6 @@ export default function(state = null, action) {
     case 'RECIPE_SELECTED':
     return action.payload;
   }
-
   // for when user hasn't clicked anything yet
   return state
 }
