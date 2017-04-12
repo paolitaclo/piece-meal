@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm, Field } from 'redux-form';
+import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { createProfileForm } from '../../actions/index';
 import './create_profile_form.css';
@@ -37,7 +38,7 @@ class createForm extends Component {
                 <label htmlFor="password">Password</label>
               <Field className="form-control" name="password" component="input" type="text" />
               </div>
-              <button className="btn btn-primary btn-form" type="submit" >Submit</button>
+                <button className="btn btn-primary btn-form" type="submit">Submit</button>
             </form>
           </div>
         </div>
