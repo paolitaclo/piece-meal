@@ -25,8 +25,9 @@ export class RecipeList extends Component {
               ) }
         </StackGrid>
       </div>
+    )
   }
-};
+}
 
 function mapStateToProps(state) {
   return {
