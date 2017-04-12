@@ -3,8 +3,9 @@ export default function() {
     {
       id: 1,
       name: 'Fried Chicken Sandwich with Jalapeno Broccoli Slaw and Spicy Mayo',
-      recipeAuthor: '',
-      recipeUrl: '',
+      recipeAuthor: 'New South Food Co',
+      servingsNumber: '4',
+      recipeUrl: 'http://newsouthfoodcompany.com/fried-chicken-sandwich-with-jalapeno-broccoli-slaw-and-spicy-mayo/',
       ingredients: ['chicken', 'bread', 'flour', 'eggs', 'broccoli slaw', 'jalapeño', 'red onion', 'mayonnaise', 'pickles', 'buttermilk'],
       instructions:
       [
@@ -25,6 +26,7 @@ export default function() {
       id:2,
       recipeAuthor: 'Everyday Insanity',
       recipeUrl: 'http://cgharris.blogspot.com/2012/10/almost-like-pioneer-womans-lasagna.html',
+      servingsNumber: '4-6',
       name: 'Pioneer Woman\'s Lasagna',
       ingredients: ['ground beef', 'sausage', 'garlic', 'salt', 'tomatoes', 'parsley', 'basil', ' cottage cheese', 'mozzarella cheese', 'eggs', 'flour'],
       instructions:
@@ -48,6 +50,7 @@ export default function() {
       id:3,
       recipeAuthor: 'All Day I Dream About Food',
       recipeUrl: 'http://alldayidreamaboutfood.com/2010/12/feta-stuffed-turkey-meatloaf-with-tzatziki-sauce-low-carb.html',
+      servingsNumber: '6',
       name: 'Feta Stuffed Turkey Meatloof with Tzatziki Sauce',
       ingredients: ['yogurt', 'lemon juice', 'garlic', 'cucumber', 'dill', 'salt', 'onion', 'olive oil', 'pepper', 'spinach', 'ground turkey', 'almond meal', 'chicken stock', 'eggs', 'worcestershire sauce', 'feta cheese'],
       instructions:
@@ -73,6 +76,7 @@ export default function() {
       id: 4,
       name: 'Edamame Mash Sandwiches',
       recipeAuthor: 'hot for food',
+      servingsNumber: '4',
       recipeUrl: 'http://www.hotforfoodblog.com/recipes/2015/2/2/edamame-mash-sandwiches',
       ingredients: ['1 C red cabbage, shredded', '1/2 C sauerkraut', '8 slices of thick cut bread of your choice', '4 tbsp vegan mayonnaise', '2 tomatoes, cut into slices', '1 1/2 C baby spinach', '1 1/2 C frozen shelled edamame', '2 garlic cloves', '1 tbsp lime juice', '2 tbsp fresh cilantro leaves', '1 tbsp fresh mint leaves', '1 tbsp fresh dill fronds', '1/4 tsp ground mustard', '1/4 tsp sea salt', '1/4 tsp ground pepper'],
       instructions: [
@@ -94,8 +98,9 @@ export default function() {
     ,
     {
       id: 5,
-      name: 'scallops with spaghetti, crispy kale & pomegranates',
+      name: 'Scallops with spaghetti, crispy kale & pomegranates',
       recipeAuthor: 'hot for food',
+      servingsNumber: '2',
       recipeUrl: 'http://www.hotforfoodblog.com/recipes/2015/2/2/scallops-with-spaghetti-crispy-kale-pomegranates',
       ingredients: ['6 king oyster mushrooms',
         '3 C hot water', '1/3 C rice wine vinegar (or half and half rice vinegar and white wine vinegar)', '1 pkg brown rice spaghetti (340g - we like Tinkyada brand brown rice spaghetti)', '3 tbsp olive oil (or use vegan butter for cooking the scallops)', '1/4 C finely chopped shallot', '1 garlic clove, minced', '1 C finely chopped leek', '1 C dry white wine', '1 C pasta water (reserved from cooking noodles)', '2 tsp sea salt', '1/2 tsp ground pepper', '1/2 tsp dried oregano', '1/2 tsp dried basil', '1/4 tsp dried chili peppers', '1 tbsp lemon juice', '3 C roughly chopped lacinato kale (stems removed)', '1/8 C pomegranate seeds'],
@@ -116,6 +121,107 @@ export default function() {
         }
       ],
       imageUrl: 'https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/t/54cff6a8e4b06f64fcf473f3/1422915257525/%23vegan+scallops+with+spaghetti%2C+crispy+kale+%26+pomegranates+%7C+RECIPE+on+hotforfoodblog.com?format=1500w'
+    },
+    {
+      id: 6,
+      name: 'Ahi Tuna Poke Quinoa Bowl',
+      servingsNumber: '2-4',
+      recipeAuthor: 'i am a food blog',
+      recipeUrl: 'http://iamafoodblog.com/ahi-tuna-poke-quinoa-bowl/',
+      ingredients: ['2 tablespoons soy sauce',
+        '1/2 tablespoon sweet soy sauce', '1 teaspoon toasted sesame oil', '1/2 teaspoon finely grated fresh ginger', '/2 teaspoon finely grated garlic', '1 lb. fresh ahi (sashimi grade) tuna, cut into bite-size cubes', '1/4 cup sliced green onions', '1/4 cup finely diced onion', 'smoked sea salt, to taste', 'toasted sesame seeds, to taste', '1 avocado, peeled, pitted, and sliced', 'short grain white rice, or quinoa, to serve', 'edamame, if desired', 'sprouts, if desired', 'crispy shallots, if desired'],
+      instructions: [
+        {
+          heading: 'scallops with spaghetti, crispy kale & pomegranates',
+          steps: ['In a small bowl, whisk together the soy sauces, sesame oil, ginger, and garlic. In a separate, appropriately sized bowl, gently toss together the tuna, green onions, and diced onion. Add the soy sauce mix to the ahi and toss until evenly coated. Cover and refrigerate for 1 hour minimum.',
+
+          `When ready to serve, taste the poke and adjust the seasoning as needed with extra soy sauce, sesame oil, and smoked sea salt. Scoop out an appropriate amount of rice or quinoa into bowls. Add a generous amount of poke to the bowls and sprinkle on sesame seeds. Finish the bowls with avocado slices, edamame, sprouts, and crispy shallots. Enjoy!`]
+        }
+      ],
+      imageUrl: 'http://iamafoodblog.com/wp-content/uploads/2016/01/poke-5.jpg'
     }
+    ,
+    {
+      id: 7,
+      name: 'Bangkok Curry Noodle Bowls with Crisp Baked Tofu',
+      servingsNumber: '2-4',
+      recipeAuthor: 'Forbidden Rice Blog',
+      recipeUrl: 'http://forbiddenriceblog.com/tag/curry-noodles/',
+      ingredients: [
+        '15.5 ounces extra firm tofu',
+        '1 tablespoon toasted sesame oil',
+        '2 cloves garlic, minced',
+        '1/4 cup soy sauce',
+        '1/4 cup light brown sugar',
+        '1/2 tsp gochujang (I prefer Mother in Law’s 00 Fermented Chili Paste)',
+        '2 tablespoon oil',
+        '3 shallots, minced',
+        '2 tablespoons fresh ginger, minced',
+        '4 tablespoons red curry paste',
+        '2 14-ounce cans regular coconut milk',
+        '1 cup No-Chicken (or vegetable broth)',
+        '4 tablespoons brown sugar',
+        '2 tablespoons gochujang',
+        '6 tablespoons soy sauce',
+        '12 ounces brown rice noodles',
+        '2 tablespoon oil',
+        'half an onion, chopped thinly',
+        '2 cups chopped broccoli florets',
+        '1 cup shredded carrots',
+        '2 cups chopped asparagus',
+        '2 cups shredded purple cabbage',
+        'black sesame seeds for topping',
+        'limes for serving',
+        'a handful of fresh thai basil for serving'
+      ],
+      instructions: [
+        {
+          heading: 'Prepare the tofu',
+          steps: [`Drain tofu about an hour before you want to prepare your meal. Roll the tofu in an absorbent towel several times and then place something heavy on top to press. I use a pot on top of a cutting board and sometimes add something to the pot to add more weight. Do this for 30 minutes.`,
+          `Preheat your oven to 400 degrees F. While the oven preheats, cut the tofu into bite size cubes. In a large mixing bowl, whisk together the sesame oil, minced garlic, soy sauce, brown sugar and gochujang. Gently toss the tofu in the mixture. Place the tofu on a nicely/generously oiled baking sheet, arranged in a single layer. Bake for 30-40 minutes until the tofu is nicely brown and crisp on the outside. Remove from the oven and set aside until needed.`]
+        },
+        {
+          heading: 'Prepare the noodles',
+          steps: [`Soak the noodles in a bowl of cold water for at least 20 minutes, until they’re soft. Drain and rinse. Set aside until needed.`]
+        },
+        {
+          heading: 'Prepare the sauce',
+          steps: [`heat the oil in a large saucepan. Add the shallots and ginger; stirring around for 3-5 minutes. Add the curry paste; cook for 1 minute. Add the coconut milk, sugar, gochujang, and soy sauce. Simmer for 15 minutes or so while you prep the rest of the ingredients – it should thicken slightly.`, `In a large skillet or wok, heat the remaining two tablespoons oil over high heat. Add the onion, carrots, broccoli, and asparagus. Stir fry for about 5 minutes until the broccoli and asparagus are bright green and just slightly tender. Add the noodles and baked tofu, tossing them around with the vegetables. Add the sauce and toss together until just combined (if you cook it too long at this point, the noodles can get overly sticky).`]
+        },
+        {
+          heading: 'Prepare the bowls',
+          steps: [`serve bowls topped with the purple cabbage and sesame seeds, along with a squeeze of lime and chopped basil leaves. Enjoy!`]
+        }
+      ],
+      imageUrl: `http://forbiddenriceblog.com/wp-content/uploads/2016/01/Forbidden-Rice-Blog-Bangkok-Curry-Noodles-with-Crisp-Tofu-11-of-11.jpg`
+    },
+    {
+      id: 8,
+      name: 'Wheat Berry Shickpea Salad with Spinach, Apples and Feta/',
+      recipeAuthor: 'Dinner with Julie',
+      recipeUrl: 'http://www.dinnerwithjulie.com/2017/02/10/blog-flog-wheat-berry-chickpea-salad-with-spinach-apples-and-feta/',
+      servingsNumber: ' 4-6',
+      ingredients: [
+        '1/2 cup wheat berries',
+        '2 loosely packed cups baby spinach, thinly sliced',
+        '1 cup cooked or canned chickpeas, rinsed and drained',
+        '2 celery stalks, chopped',
+        '1 apple, cored and diced',
+        '1/2 cup Italian parsley, leaves chopped (stems discarded)',
+        '1/2 cup crumbled feta',
+        'salt and freshly ground pepper, to taste',
+        '1/2 cup almonds, toasted and roughly chopped'
+      ],
+      instructions: [
+        {
+          heading: 'Prepare the tofu',
+          steps: [
+          `Put the wheat berries into a medium saucepan and add enough water to cover them by a couple inches. Bring to a boil, reduce the heat and simmer for 45 minutes to an hour, or until they’re tender. Drain and set aside to cool.`,
+          'Put the wheat berries into a bowl with the spinach, chickpeas, celery, apple, parsley and feta. In a small bowl or jar, whisk or shake together the vinegar, oil, mustard and honey. Drizzle over the salad and toss to coat. Season with salt and pepper and sprinkle with almonds just before serving.']
+        }
+      ],
+      imageUrl: `http://www.dinnerwithjulie.com/wp-content/uploads/2017/01/Wheat-Berry-Chickpea-Salad-1.jpg`
+    }
+
   ]
 }

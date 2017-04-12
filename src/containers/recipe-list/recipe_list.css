@@ -1,5 +1,6 @@
-.list-item li {
-  display: inline;
+.content {
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .p-y-15 {
@@ -11,22 +12,31 @@
   border-radius: 15px;
 }
 
-.peiceMeal h1 {
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 15px;
-  color: #666;
-}
-
 .recipe-div {
+  position: absolute;
   border-style: none;
   border-radius: 15px;
-  display: block;
-
+  display: inline-block;
+  padding: 8px;
+  background: #fff;
+  top: 0;
+  left: 0;
 }
 
 .recipe-div:hover {
-  background: #f2f2f2;
+  background: #e0e0e0;
+}
+
+.recipe-div:hover h1 {
+  color: #44474d;
+}
+
+
+.peiceMeal h1 {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+  color: #868990;
 }
 
 .recipe-div :hover {

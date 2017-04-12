@@ -7,7 +7,7 @@ class Recipe extends React.Component {
   render() {
     const { id, imageUrl, name } = this.props;
     return (
-      <div className="recipe-div col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div className="recipe-div">
           <Link to={`/recipe/${id}`}>
             <img className="img-responsive recipe-img" src={imageUrl} alt={name} />
             <div className="peiceMeal Summary">
