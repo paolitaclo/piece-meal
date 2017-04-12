@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './recipe_detail.css'
 
-class RecipeDetail extends Component {
+export class RecipeDetail extends Component {
 
   render() {
     if (! this.props.recipe) {

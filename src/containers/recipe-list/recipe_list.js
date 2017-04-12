@@ -5,7 +5,7 @@ import { selectRecipe } from '../../actions/index'
 import Recipe from './recipe';
 import './recipe_list.css'
 
-class RecipeList extends Component {
+export class RecipeList extends Component {
 
   render() {
     const { recipes } = this.props;

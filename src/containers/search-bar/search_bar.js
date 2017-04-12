@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({ setQuery, doSearch }, dispatch)
 }
 
-class SearchBar extends Component {
+export class SearchBar extends Component {
     render() {
       return (
         <Navbar.Form pullLeft>
