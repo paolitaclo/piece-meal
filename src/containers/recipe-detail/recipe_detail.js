@@ -6,8 +6,6 @@ export class RecipeDetail extends Component {
 
   render() {
     const recipe = this.props.recipes.find(recipe => parseInt(this.props.match.params.id, 10)===recipe.id);
-    console.log(recipe);
-
     if (!recipe) {
       return (<div>No Recipe</div>)
     }
