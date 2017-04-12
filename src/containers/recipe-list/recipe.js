@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './recipe_list.css'
 
 class Recipe extends React.Component {
@@ -18,6 +17,5 @@ class Recipe extends React.Component {
     );
   }
 }
-
 
 export default Recipe;

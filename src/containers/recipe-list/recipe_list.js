@@ -5,7 +5,7 @@ import StackGrid from "react-stack-grid";
 
 import './recipe_list.css'
 
-class RecipeList extends Component {
+export class RecipeList extends Component {
 
   render() {
     const { recipes } = this.props;

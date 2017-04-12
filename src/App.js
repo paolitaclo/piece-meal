@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './style/App.css';
 
 import NavigationBar from './containers/navigation-bar/navigation_bar';
@@ -6,9 +7,8 @@ import CreateForm from './containers/create-profile-form/create_profile_form';
 import RecipeList from './containers/recipe-list/recipe_list';
 import Recipe from './containers/recipe-list/recipe';
 import RecipeDetail from './containers/recipe-detail/recipe_detail';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,40 +17,8 @@ class App extends Component {
       onHide: false
     };
   }
-
-  onClickRecipe=(recipe, recipeIndex) => {
-    this.setState({indexSelected: recipeIndex});
-  };
-
-  onCreateProfile=()=> {
-    this.setState({
-      profile: 'Paola'
-    });
-  }
-  // API Call for ingredientSearch
-  // ingredientSearch(term) {
-  //
-  // }
-
-
-  // const homePage = ({path, text}) => {
-  //   return (
-  //     <li><Link to='/{path}'>{text}</Link></li>
-  //   )
-  // }
-  //
-  // const mapStateToProps = (state) => {
-  //   return {
-  //     path: state.path
-  //   }
-  // }
-
-  // const statefulHomePage = connect(mapStateToProps)(homePage) ;
-
   render() {
-
     return (
-
       <Router>
         <div>
           <Route exact path='/' component={NavigationBar} />
@@ -60,25 +28,11 @@ class App extends Component {
           <Route exact path='/create_profile' component={CreateForm} />
           <Route exact path='/recipe/:id' component={NavigationBar} />
           <Route exact path='/recipe/:id' component={RecipeDetail} />
-
-
         </div>
       </Router>
 
-      // <Router>
-      //   <div className="App">
-      //     <NavigationBar profile={this.state.profile} onCreateProfile={this.onCreateProfile}/>
-      //     <div className="container">
-      //       <CreateProfileForm />
-      //     </div>
-      //     <div className="container">
-      //       <RecipeList />
-      //       <RecipeDetail />
-      //     </div>
-      //   </div>
-      // </Router>
     );
   }
 }
 
-export default App;
+// export default App;

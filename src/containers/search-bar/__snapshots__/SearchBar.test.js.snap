@@ -1,0 +1,26 @@
+exports[`Search snapshots 1`] = `
+<NavbarForm
+  componentClass="div"
+  pullLeft={true}
+  pullRight={false}>
+  <FormGroup
+    bsClass="form-group">
+    <FormControl
+      bsClass="form-control"
+      componentClass="input"
+      onChange={[Function]}
+      placeholder="Search Recipes"
+      type="text" />
+  </FormGroup>
+   
+  <Button
+    active={false}
+    block={false}
+    bsClass="btn"
+    bsStyle="default"
+    disabled={false}
+    onClick={[Function]}>
+    Go
+  </Button>
+</NavbarForm>
+`;

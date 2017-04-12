@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './recipe_detail.css'
 
-class RecipeDetail extends Component {
+export class RecipeDetail extends Component {
 
   render() {
-    console.log(typeof this.props.match.params.id); // string
     const recipe = this.props.recipes.find(recipe => parseInt(this.props.match.params.id, 10)===recipe.id);
     console.log(recipe);
 
