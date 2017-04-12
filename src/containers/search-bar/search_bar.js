@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux';
 import { Navbar, FormGroup, FormControl, Button } from 'react-bootstrap';
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     value: state.query
   }
